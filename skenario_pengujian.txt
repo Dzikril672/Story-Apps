@@ -1,0 +1,115 @@
+Unit Testing (App Story)
+
+===============================================================================
+========= UserRepository =========
+1. Register berhasil
+`when register response Should Not Null`
+- memastikan bahwa response tidak null
+- memastikan bahwa data dummy sama dengan data aktual
+
+2. Login berhasil
+`when login response Should Not Null`
+- memastikan bahwa response tidak null
+- memastikan bahwa data dummy sama dengan data aktual
+
+========= StoryRepository =========
+1. Upload story berhasil
+`Upload story successfully`
+- Memastikan upload story berhasil dan response tidak null
+- memastikan response aktual sama dengan expected response
+
+2. Mendapatkan data story dengan lokasi berhasil
+`when stories location Should Not Null`
+- memastikan bahwa data tidak null
+- memastikan bahwa data aktual sama dengan data expected
+
+3. Mendapatkan data story dengan paging berhasil
+`Get stories paging - successfully`
+- memastikan bahwa data tidak null
+- memastikan bahwa data aktual sama dengan data expected
+
+===============================================================================
+========= SignupViewModel =========
+1. Signup Gagal
+`when signup failed and Result Error`
+- Memastikan response tidak bernilai null
+- Memastikan mengembalikan Result.Error
+
+2. Signup Berhasil
+`when signup success and Result Success`
+- Memastikan mengembalikan Result.Success
+- Memastikan response yang didapat tidak bernilai null
+- Memastikan bahwa method userRepository.register telah dipanggil
+- memastikan actual response dan dummy sama
+
+========= LoginViewModel =========
+1. Login Gagal
+`when login failed and Result Error`
+- Memastikan response tidak bernilai null
+- Memastikan mengembalikan Result.Error
+
+2. Login Berhasil
+`when login success and Result Success`
+- Memastikan mengembalikan Result.Success
+- Memastikan response tidak bernilai null
+- Memastikan bahwa method login telah dipanggil
+- memastikan actual response dan dummy sama
+
+3. Menyimpan token
+`Save token successfully`
+- Memastikan bahwa token berhasil disimpan
+
+========= MainViewModel =========
+1. Logout berhasil
+`set logout successfully`
+- Memastikan logout berhasil
+- Memastikan method userRepository.logout telah dipanggil
+
+2. Memanggil token berhasil
+`get token successfully`
+- Memastikan bahwa token berhasil dipanggil
+- Memastikan bahwa token tidak bernilai null
+
+3. Memanggil data list story berhasil
+`when get list story successfully`
+- memastikan data dengan paging berhasil dipanggil
+- memastikan data tidak bernilai null
+- memastikan jumlah data dummy dan aktual sama
+
+4. Memanggil session login berhasil
+`get session login successfully`
+- Memastikan bahwa session berhasil dipanggil
+- Memastikan bahwa session tidak bernilai null
+
+========= MapsViewModel =========
+1. Memanggil list story location gagal
+`when Network error Should Return Error`
+- Memastikan data tidak bernilai null
+- Memastikan mengembalikan Result.Error
+
+2. Memanggil list story location berhasil
+`when Get maps story Should Not Null and Return Success
+- Memastikan data tidak bernilai null
+- Memastikan response mengembalikan Result.Success
+- Memastikan data dummy sama dengan aktual
+- Memastikan jumlah data sama
+
+========= StoryViewModel =========
+1. Upload data story gagal
+`Upload story failed`
+- memastikan bahwa response tidak null
+- memastikan bahwa response mengembalikan Result.Error
+
+2. Upload data story berhasil
+`Upload story successfully`
+- memastikan bahwa response tidak null
+- memastikan bahwa response mengembalikan Result.Success
+
+===============================================================================
+======== MainActivityTest ========
+1. List Story berhasil
+- memastikan activity telah terbuka
+- memastikan recycleview telah tampil pada layar
+
+
+
